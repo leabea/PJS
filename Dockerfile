@@ -18,5 +18,8 @@ ENTRYPOINT [ "python" ]
 
 #füge die anderen Python Files hinzu
 ADD imputationMean.py /
+ADD imputationMedian.py /
+ADD imputationMode.py /
+ADD deleteMissingValues.py /
 
-CMD ["view.py", "imputationMean.py"]
+CMD ["view.py", "imputationMean.py", "imputationMedian.py", "imputationMode.py", "deleteMissingValues.py"]
