@@ -8,6 +8,7 @@ print(type(dataInput))
 print(dataInput.columns)
 
 #erste Variante: listenweiser Ausschluss, d.h. Entfernen von Datenreihen, bei denen mindestens ein Wert NaN ist
+#hier habe ich beispielhaft alle fehlenden Werte in der Spalte 12 samt ihrer Reihe eliminiert
 dataInput.dropna(subset = [12], inplace=True)
 
 dataInput.to_csv('dataListwise.csv')
