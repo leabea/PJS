@@ -14,4 +14,9 @@ dataInput.dropna(subset = [12], inplace=True)
 dataInput.to_csv('dataListwise.csv')
 
 
+#probiere einen json file zu erstellen
+csv_file = 'dataListwise.csv'
+csv_file.to_json("ersterListwise.json")
+print('hi')
+
 
